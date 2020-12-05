@@ -1,5 +1,5 @@
 # montecarbo
-MonteCarbo is a software to construct simple 5-, 6- and 7-membered ring multifunctionalized monosaccharides and nucleobases and to dock them into target glyco- and RNA/DNA- active enzymes. The core code is a bash script and it executes simple orders to generate the Z-matrix of the neutral molecule of interest. After that, a Fortran90 code based on a pseudo-random number generator (MonteCarlo method) is executed to asign dihedral angles to the different rotamers present in the structure (5-, 6-, 7-membered ring conformers and OH, NH2, CH2OH and so on). In order to transform the Z-matrix into a PDB or XYZ file, the program requires the installation of an external code (Babel, for example, default). The program also have a GIC implementation of the Cremer and Pople puckering coordinates for 5-, 6- and 7-membered ring ready to use in Gaussian16. Once the structures are generated and optimized using the preferred Quantum Mechanics software for the user, a second code is ready to execute AutoDock Vina in order to dock the different conformers of the molecule of interest in the active site of a wide family of enzymes. (More information in README file, any further doubt, do not hesitate to contact me: dr.s.alonso-gil@gmx.com )
+MonteCarbo is a software to construct simple 5-, 6- and 7-membered ring multifunctionalized monosaccharides and nucleobases and to dock them into target glyco- and RNA/DNA- active enzymes. The core code is a bash script and it executes simple orders to generate the Z-matrix of the neutral molecule of interest. After that, a Fortran90 code based on a pseudo-random number generator (MonteCarlo method) is executed to assign dihedral angles to the different rotamers present in the structure (5-, 6-, 7-membered ring conformers and OH, NH2, CH2OH and so on). In order to transform the Z-matrix into a PDB or XYZ file, the program requires the installation of an external code (Babel, for example, default). The program also has a GIC implementation of the Cremer and Pople puckering coordinates for 5-, 6- and 7-membered ring ready to use in Gaussian16. Once the structures are generated and optimized using the preferred Quantum Mechanics software for the user, a second code is ready to execute AutoDock Vina in order to dock the different conformers of the molecule of interest in the active site of a wide family of enzymes. (More information in README file, any further doubt, do not hesitate to contact me: dr.s.alonso-gil@gmx.com )
 
 First of all, untar the file MonteCarbo.tar.gz
 
@@ -15,7 +15,7 @@ CONTENT OF THE README IN MonteCarbo folder:
 *                                                          *
 ************************************************************
 
-MonteCarbo is a open-source bash script that requires:
+MonteCarbo is an open-source bash script that requires:
 
 -Fortran compiler f95
 
@@ -40,8 +40,8 @@ or
 *                                                          *
 ************************************************************
 
-In the main folder of the program the user will find an 
-example of a input.dat file. Feel free to play with it.
+In the main folder of the program, the user will find an 
+example of an input.dat file. Feel free to play with it.
 
 Structure of input.dat:
 
@@ -94,7 +94,7 @@ Ura - Uracyl - 1 rotamer
 Cyt - Cytosine - 1 rotamer
 Gua - Guanine - 1 rotamer
 
-7) Number of confomers to be generated
+7) Number of conformers to be generated
 
 That's all! Enjoy!
 
@@ -155,12 +155,12 @@ MCdock.bash must be executed in the MonteCarbo folder:
 The script requires:
 
 1) The name of the folder where the structures are
-splitted in one folder per structure.
+split into one folder per structure.
 
 2) The format of the coordinates files (XYZ, PDB or G)
 
 3) Which kind of enzymes will be the target for docking
-(Feel free to create new family of enzymes in the
+(Feel free to create a new family of enzymes in the
 receptor folder: mkdir receptors/NEW-ENZYMES)
 
 Example:
