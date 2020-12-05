@@ -123,5 +123,59 @@ Again, enjoy!
 *                          MCdock                          *
 *                                                          *
 ************************************************************
+First of all, download and decompress the MCdock.tar.gz:
+
+tar -czvf MCdock.tar.gz
+
+The content of this file is:
+
+1) MCdock.bash
+
+2) receptors folder with pdb, pdbqt and config files for
+docking calculations with AutoDock Vina.
+
+3) vina folder where the user must copy the ./vina program
+that can be downloaded in
+http://vina.scripps.edu/download.html.
+
+To perform the docking calculations the following codes are
+required:
+
+1) Open Babel
+
+2) AutoDock Vina
+
+3) prepare_ligand and prepare_receptor executables from
+AutoDock package.
+
+MCdock.bash must be executed in the MonteCarbo folder:
+
+/address/MonteCarbo/MCdock.bash
+
+The script requires:
+
+1) The name of the folder where the structures are
+splitted in one folder per structure.
+
+2) The format of the coordinates files (XYZ, PDB or G)
+
+3) Which kind of enzymes will be the target for docking
+(Feel free to create new family of enzymes in the
+receptor folder: mkdir receptors/NEW-ENZYMES)
+
+Example:
+
+./MCdock
+
+testglucose10
+
+XYZ
+
+GLUCO
+
+*This example will dock 10 structures of glucose in
+some glucosidases.*
+
+And enjoy!
 
 
