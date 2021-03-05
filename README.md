@@ -125,7 +125,7 @@ Again, enjoy!
 ************************************************************
 First of all, download and decompress the MCdock.tar.gz:
 
-tar -czvf MCdock.tar.gz
+tar -zxvf MCdock.tar.gz
 
 The content of this file is:
 
