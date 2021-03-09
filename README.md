@@ -25,7 +25,8 @@ MonteCarbo is an open-source bash script that requires:
 version of Gaussian (09,03,98) (NOPUCKG)
 
 -(Optional) To execute MCdock: AutoDock Vina 
-Download available in http://autodock.scripps.edu/downloads/autodock-registration/autodock-4-2-download-page/
+
+Download available in http://vina.scripps.edu/download.html
 
 To execute MonteCarbo just:
 
