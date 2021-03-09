@@ -19,12 +19,13 @@ MonteCarbo is an open-source bash script that requires:
 
 -Fortran compiler f95
 
--Open Babel 2.4.1 or similar (NOPUCKPDB, NOPUCKXYZ)
+-Open Babel 2.4.1 or similar (NOPUCKPDB, NOPUCKXYZ) (babel and obabel executables)
 
 -(Optional) Gaussian16 for optimizations (PUCK) or other 
 version of Gaussian (09,03,98) (NOPUCKG)
 
--(Optional) To execute MCdock: AutoDock Vina
+-(Optional) To execute MCdock: AutoDock Vina 
+Download available in http://autodock.scripps.edu/downloads/autodock-registration/autodock-4-2-download-page/
 
 To execute MonteCarbo just:
 
@@ -133,6 +134,7 @@ The content of this file is:
 
 2) receptors folder with pdb, pdbqt and config files for
 docking calculations with AutoDock Vina.
+http://autodock.scripps.edu/downloads/autodock-registration/autodock-4-2-download-page/
 
 3) vina folder where the user must copy the ./vina program
 that can be downloaded in
@@ -145,8 +147,8 @@ required:
 
 2) AutoDock Vina
 
-3) prepare_ligand and prepare_receptor executables from
-AutoDock package.
+3) prepare_ligand and prepare_receptor executables from AutoDock package. 
+(or prepare_ligand.py and prepare_receptor.py of the MGLTools repository)
 
 MCdock.bash must be executed in the MonteCarbo folder:
 
